@@ -167,6 +167,61 @@ margin-right: 10px;
     height: calc(100vh - 80px);
     width: calc(100vw - 180px);
     background-color: #141922;
+    overflow: scroll;
+}
+
+#menu-playlist{
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#menu-playlist a{
+    font-size: 12px;
+    padding: 0 10px;
+    color: #a3a3a3;
+}
+
+h2{
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+h3{
+    margin: 15px 0;
+}
+
+.img-flex span{
+    color: #a3a3a3;
+}
+
+.img-square img{
+    width: 180px;
+    object-fit: contain;
+}
+
+.img-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.img-flex div{
+    width: 180px;
+    text-align: center;
+}
+
+#img-flex-johnDoe, 
+#img-flex-artistipopolari{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#img-flex-johnDoe > div, 
+#img-flex-artistipopolari > div{
+margin-right: 10px;
+margin-top: 20px;
 }
 
 /* footer */
