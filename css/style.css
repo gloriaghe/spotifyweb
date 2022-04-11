@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* regole generali */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* barra superiore in trasparenza */
+#top-bar{
+  background-color: rgb(8, 11, 18, 0.8);  
+  height: 80px;
+  width: 100vw;
+  position: fixed;
+  z-index: 50;
+}
+
+/* barra laterale comandi */
+#internal-section{
+    display: flex;
+}
+
+
+aside{
+    width: 180px;
+    height: calc(100vh - 80px);
+    background-color: #000000;
+    z-index: 80;
+}
+
+/* pagina interna con playlist e brani */
+#section-playlist{
+    height: calc(100vh - 80px);
+    width: calc(100vw - 180px);
+    background-color: #141922;
+}
+/* footer */
+footer{
+    height: 80px;
+    width: 100vw;
+    background-color: #282828;
+    position: fixed;
+}
