@@ -71,6 +71,11 @@ aside{
 .here{
     color: white;
 }
+
+aside .img-aside{
+    width: 22px;
+    text-align: center;
+}
 aside div nav{
     margin-left: 20px;
     margin-bottom: 20px;
@@ -83,12 +88,6 @@ aside div nav ul li{
 aside div nav ul li a {
     color: #a3a3a3;
 }
-
-aside div nav i{
-    font-size: 20px;
-}
-
-
 
 #playlist-navsx{
     margin-left: 20px;
@@ -146,11 +145,15 @@ aside div nav i{
     margin: 10px 0;
 }
 
-#account .fa-user{
+#account #img-download{
+width: 10px;
+}
+
+#account #img-profile{
+    width: 25px;
     border-radius: 50%;
-    padding: 4px;
+    padding: 2px;
     background-color: #a3a3a3;
-    font-size: 18px;
 }
 
 
