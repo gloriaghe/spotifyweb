@@ -7,6 +7,13 @@
 /* regole generali */
 body{
     font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.container::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 
@@ -17,6 +24,16 @@ body{
   width: 100vw;
   position: fixed;
   z-index: 50;
+}
+
+#top-bar > strong{
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 10px 30px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 5px;
+    font-size: 10px;
 }
 
 /* barra laterale comandi */
