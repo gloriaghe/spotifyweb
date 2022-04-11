@@ -64,6 +64,10 @@ aside{
     justify-content: space-between;
 }
 
+.flex{
+    display: flex;
+   align-items: center;
+}
 #logo{
     width: 120px;
     margin: 20px 20px;
@@ -75,6 +79,7 @@ aside{
 aside .img-aside{
     width: 22px;
     text-align: center;
+    margin-right: 10px;
 }
 aside div nav{
     margin-left: 20px;
@@ -147,6 +152,7 @@ aside div nav ul li a {
 
 #account #img-download{
 width: 10px;
+margin-right: 10px;
 }
 
 #account #img-profile{
@@ -154,6 +160,7 @@ width: 10px;
     border-radius: 50%;
     padding: 2px;
     background-color: #a3a3a3;
+    margin-right: 10px;
 }
 
 
