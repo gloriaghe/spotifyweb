@@ -8,12 +8,24 @@
 body{
     font-family: 'Montserrat', sans-serif;
     color: white;
+    font-size: 12px;
+
 }
 
 .container::after{
     content: "";
     display: table;
     clear: both;
+}
+
+a{
+    text-decoration: none;
+   color: white;
+
+}
+
+ul li{
+    list-style-type: none;
 }
 
 
@@ -47,8 +59,67 @@ aside{
     height: calc(100vh - 80px);
     background-color: #000000;
     z-index: 80;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+#logo{
+    width: 120px;
+    margin: 20px 20px;
+}
+.here{
+    color: white;
+}
+aside div nav{
+    margin-left: 20px;
+
+} 
+aside div nav ul li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+aside div nav ul li a {
+    color: #a3a3a3;
+}
+
+aside div nav i{
+    font-size: 20px;
+}
+
+
+
+#playlist-navsx{
+    margin-left: 20px;
+}
+
+#playlist-navsx ul li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #a3a3a3;
+}
+
+#playlist-navsx ul li a{
+    color: #a3a3a3;
+}
+
+#playlist-navsx ul li:first-child a{
+    display: flex;
+}
+#plus{
+    background-color:#a3a3a3 ;
+    font-size: 30px;
+    color: #000000;
+    padding: 0 7px;
+    margin-right: 10px;
+}
+#creates-playlist{
+margin-top: 10px;
+}
+
+#account{
+    margin-left: 20px;
+}
 /* pagina interna con playlist e brani */
 #section-playlist{
     height: calc(100vh - 80px);
