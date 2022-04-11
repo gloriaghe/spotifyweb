@@ -202,13 +202,14 @@ h3{
 
 .img-flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
 .img-flex div{
     width: 180px;
     text-align: center;
+    margin-right: 10px;
 }
 
 #img-flex-johnDoe, 
@@ -238,7 +239,7 @@ footer{
 /* parte sinistra */
 
 #footer-sx{
-    width: 13vw;
+    width: 190px;
     margin-left: 20px;
     display: flex;
     justify-content: space-between;
@@ -304,7 +305,7 @@ footer{
 
 /* parte destra */
 #footer-dx{
-    width: 18vw;
+    width: 210px;
 }
 
 #footer-dx #bar-music{
