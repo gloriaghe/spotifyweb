@@ -247,6 +247,7 @@ h3{
     width: 180px;
     text-align: center;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 #img-artistipopolari img{
@@ -544,7 +545,7 @@ footer i:hover{
     }
 
     .container-playlist{
-        width: 180px;
+        width: 160px;
     }
 
     #logo a img:last-child{
@@ -575,6 +576,13 @@ footer i:hover{
         width: 100px;
     }
 
+}
+
+@media screen and (max-width:410px){
+
+    .container-playlist{
+        width: 120px;
+    }
 }
 
 @media screen and (max-height:600px) {
