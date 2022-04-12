@@ -219,9 +219,9 @@ h3{
     color: #a3a3a3;
 }
 
-.img-square img{
-    width: 180px;
-    object-fit: contain;
+.img-squares{
+    width: 100%;
+    object-fit: cover;
 }
 
 .img-flex{
@@ -230,10 +230,14 @@ h3{
     flex-wrap: wrap;
 }
 
-.img-flex div{
+.container-playlist{
     width: 180px;
     text-align: center;
     margin-right: 10px;
+}
+
+#img-flex-artistipopolari img{
+    border-radius: 50%;
 }
 
 #img-flex-johnDoe, 
@@ -241,12 +245,33 @@ h3{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 #img-flex-johnDoe > div, 
 #img-flex-artistipopolari > div{
 margin-right: 10px;
 margin-top: 20px;
+}
+
+.img-squares:hover{
+    filter: opacity(0.6);
+}
+
+.container-img{
+    position: relative;
+}
+.download-img{
+    display: none;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-img:hover .download-img{
+    display: inline;
 }
 
 /* footer */
@@ -376,13 +401,15 @@ footer{
 #footer-dx i{
     margin: 0 10px;
 }
+
 footer i:hover{
     cursor: pointer;
 }
+
 @media screen and (max-width:900px){
     /* pagina interna con playlist e brani */
-    .img-square img{
-        width: 150px;
+    .container-playlist{
+        width: 140px;
     }
 
     /* footer */
@@ -416,9 +443,7 @@ footer i:hover{
 
 @media screen and (max-width:570px){
     /* pagina interna con playlist e brani */
-    .img-square img{
-        width: 120px;
-    }
+   
 
     /* footer */
     #footer-sx{
@@ -461,6 +486,10 @@ footer i:hover{
 
     #section-playlist{
         width: calc(100vw - 60px);
+    }
+
+    .container-playlist{
+        width: 180px;
     }
 
     #logo a img:last-child{
