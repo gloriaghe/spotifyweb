@@ -577,14 +577,8 @@ footer i:hover{
 
 }
 
-@media screen and (max-height:630px){
-    #scroll-bar-lateral{
-        height: 25vh;
-    }
-}
-
-@media screen and (max-height:590px){
-    #scroll-bar-lateral{
-    display: none;
+@media screen and (max-height:600px) {
+    #scroll-bar-lateral {
+        display: none;
     }
 }
