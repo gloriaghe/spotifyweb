@@ -98,18 +98,23 @@ aside div nav ul li a {
     margin-left: 20px;
 }
 
-#playlist-navsx ul li{
+#playlist-navsx div{
     margin-top: 15px;
     margin-bottom: 15px;
     color: #a3a3a3;
 }
 
-#playlist-navsx ul li a{
+#playlist-navsx div a{
     color: #a3a3a3;
 }
 
-#playlist-navsx ul li:first-child a{
+#playlist-navsx div:first-child a{
     display: flex;
+}
+
+#scroll-bar-lateral{
+    height: 30vh;
+    overflow: scroll;
 }
 
 #plus{
@@ -231,6 +236,7 @@ footer{
     width: 100vw;
     background-color: #282828;
     position: fixed;
+    z-index: 200;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -375,4 +381,15 @@ footer{
         height:20px
     }
 
+}
+@media screen and (max-height:630px){
+    #scroll-bar-lateral{
+        height: 25vh;
+    }
+}
+
+@media screen and (max-height:590px){
+    #scroll-bar-lateral{
+    display: none;
+    }
 }
