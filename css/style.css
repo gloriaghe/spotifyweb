@@ -328,3 +328,51 @@ footer{
 #footer-dx i{
     margin: 0 10px;
 }
+
+@media screen and (max-width:900px){
+    /* pagina interna con playlist e brani */
+    .img-square img{
+        width: 150px;
+    }
+
+    /* footer */
+    #footer-sx{
+        width: 160px;
+        margin-left: 10px;
+    }
+   
+    #time-footer-center span:last-child{
+        width: 83px;
+    }
+
+    #time-footer-center span:first-child{
+        width: 34px;
+    }  
+
+    #nav-central-buttons{
+        width: 100px;
+
+
+}
+
+
+@media screen and (max-width:570px){
+    /* pagina interna con playlist e brani */
+    .img-square img{
+        width: 120px;
+    }
+
+    /* footer */
+    #footer-sx{
+        width: 140px;
+        margin-left: 5px;
+    }
+    #footer-sx img{
+        margin-right: 5px;
+    }
+
+    #footer-sx img{
+        height:20px
+    }
+
+}
