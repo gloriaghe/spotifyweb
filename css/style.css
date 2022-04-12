@@ -9,7 +9,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 12px;
-
 }
 
 .container::after{
@@ -44,8 +43,8 @@ ul li{
     padding: 10px 30px;
     float: right;
     margin-top: 20px;
-    margin-right: 5px;
-    font-size: 10px;
+    margin-right: 20px ;
+    font-size: 12px;
 }
 
 #top-bar > strong:hover{
@@ -59,7 +58,7 @@ ul li{
 
 
 aside{
-    width: 190px;
+    width: 200px;
     height: calc(100vh - 80px);
     background-color: #000000;
     z-index: 80;
@@ -87,7 +86,7 @@ aside{
 aside .img-aside{
     width: 22px;
     text-align: center;
-    margin-right: 10px;
+    margin-right: 7px;
 }
 aside div nav{
     margin-left: 20px;
@@ -95,8 +94,7 @@ aside div nav{
 
 }
 aside div nav ul li{
-    margin-top: 15px;
-    margin-bottom: 20px;
+    margin: 5px 0;
 }
 aside div nav ul li a {
     color: #a3a3a3;
@@ -107,13 +105,14 @@ aside div nav ul li a {
 }
 
 #playlist-navsx div{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: #a3a3a3;
 }
 
 #playlist-navsx div a{
     color: #a3a3a3;
+    margin-top: 10px;
 }
 
 #playlist-navsx div:first-child a{
@@ -122,7 +121,11 @@ aside div nav ul li a {
 
 #scroll-bar-lateral{
     height: 30vh;
-    overflow: scroll;
+    overflow-y: scroll;
+}
+
+#scroll-bar-lateral div{
+    margin: 15px 0;
 }
 
 #plus{
@@ -135,11 +138,8 @@ aside div nav ul li a {
 }
 
 #creates-playlist{
-    margin-top: 10px;
     font-size: 15px;
 }
-
-
 
 #account{
     margin-left: 20px;
@@ -151,7 +151,7 @@ aside div nav ul li a {
 
 #account a:first-child{
     color: #a3a3a3;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 #account > span{
@@ -162,7 +162,7 @@ aside div nav ul li a {
 }
 
 #account #img-download{
-width: 10px;
+width: 15px;
 margin-right: 10px;
 }
 
@@ -197,13 +197,14 @@ nav ul li:first-child{
 /* pagina interna con playlist e brani */
 #section-playlist{
     height: calc(100vh - 80px);
-    width: calc(100vw - 180px);
+    width: calc(100vw - 200px);
     background-color: #141922;
     overflow: scroll;
 }
 
 #menu-playlist{
     margin-top: 100px;
+    margin-bottom: 30px;
     text-align: center;
     font-weight: bolder;
 }
@@ -213,15 +214,15 @@ nav ul li:first-child{
 }
 
 #menu-playlist a{
-    font-size: 12px;
+    font-size: 13px;
     padding: 0 10px;
     color: #a3a3a3;
-line-height: 20px;
+    line-height: 20px;
 }
 
 h2{
-    font-size: 25px;
-    margin: 20px 0;
+    font-size: 23px;
+    margin: 20px 20px;
 }
 
 h3{
@@ -244,10 +245,9 @@ h3{
 }
 
 .container-playlist{
-    width: 180px;
+    width: 170px;
     text-align: center;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin: 20px 10px;
 }
 
 #img-artistipopolari img{
@@ -323,8 +323,9 @@ footer{
     
 }
 
-#footer-sx .fa-heart{
-    padding-left: 20px;
+#footer-sx #icon-footer-sx{
+    margin-left: 20px;  
+    display: flex;
 }
 
 #brano-underlined{
@@ -334,9 +335,13 @@ footer{
 #brano-underlined:hover{
     text-decoration: underline;
 }
+
 #footer-sx i{
     color: #a3a3a3;
+    margin-bottom: 10px;
+    font-size: 12px;
 }
+
 #footer-sx i:hover{
     color: white;
 }
@@ -352,7 +357,7 @@ footer{
 
 
 #nav-central-buttons{
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 13vw;
@@ -369,7 +374,7 @@ footer{
     font-size: 10px;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 
@@ -384,10 +389,10 @@ footer{
 
 #time-footer-center #bar-footer-center-small{
     width: 100px;
-    border-bottom: 5px solid white;
+    border-bottom: 3px solid white;
     border-radius: 2px;
     position: absolute;
-    bottom:-4px;
+    bottom:-3px;
     left: 0;
 }
 
@@ -397,7 +402,7 @@ footer{
 }
 
 #nav-footer .fa-play-circle{
-    font-size: 20px;
+    font-size: 25px;
     margin: 0 10px;
 }
 
@@ -426,6 +431,8 @@ footer{
 /* parte destra */
 #footer-dx{
     width: 210px;
+    display: flex;
+    justify-content: flex-end;
 }
 #footer-dx div{
     display: inline-block;
@@ -434,16 +441,16 @@ footer{
     display: inline-block;
     border-radius: 2px;
     width: 25px;
-    border-bottom: 5px solid white;
+    border-bottom: 3px solid white;
     position: absolute;
-    bottom:-4px;
+    bottom:-3px;
     left: 0;
 }
 
 #footer-dx #bar-footer-dx{
     display: inline-block;
     border-radius: 2px;
-    width: 80px;
+    width: 100px;
     border-bottom: #a3a3a3 3px solid;
     margin-right: 20px;
     position: relative;
@@ -455,7 +462,8 @@ footer{
 }
 
 #footer-dx i{
-    margin: 0 10px;
+    margin: 0 5px;
+    font-size: 12px;
 }
 
 footer i:hover{
@@ -483,7 +491,7 @@ footer i:hover{
     }  
 
     #nav-central-buttons{
-        width: 100px;
+        width: 130px;
 
 
 }
@@ -495,12 +503,21 @@ footer i:hover{
     #time-footer-center #bar-footer-center-small{
         width: 30px;
     }  
+
+    #menu-playlist {
+        line-height: 40px;
+    }
+
+    #footer-sx #icon-footer-sx{
+        margin-left: 20px;  
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-between;
+    }
 }
 
-@media screen and (max-width:570px){
-    /* pagina interna con playlist e brani */
+@media screen and (max-width:600px){
    
-
     /* footer */
     #footer-sx{
         width: 140px;
@@ -535,7 +552,7 @@ footer i:hover{
     }
 }
 
-@media screen and (max-width:460px){
+@media screen and (max-width:560px){
     aside{
         width: 60px;
     }
@@ -557,9 +574,7 @@ footer i:hover{
     aside nav span,
     #playlist-navsx, 
     #account span,
-    #account strong,
-    #footer-dx div,
-    #footer-sx i{
+    #account strong{
     display: none;
     }
 
@@ -568,14 +583,20 @@ footer i:hover{
         width: 25px;
     }
 
+    #nav-footer{
+        width: 40%;
+    }
     #footer-dx{
-        width: 50px;
+        width: 30%;
     }
 
     #footer-sx {
-        width: 100px;
+        width: 30%;
     }
-
+    #nav-central-buttons{
+        font-size: 16px;
+        margin left: 25px;
+    }
 }
 
 @media screen and (max-width:410px){
