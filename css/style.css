@@ -372,7 +372,7 @@ footer{
 }
 
 
-#time-footer-center #barr-footer-center{
+#time-footer-center #bar-footer-center{
     display: inline-block;
     width: 350px;
     border-bottom: #a3a3a3 3px solid;
@@ -390,7 +390,8 @@ footer{
     left: 0;
 }
 
-#time-footer-center #bar-footer-center-small:hover{
+#time-footer-center #bar-footer-center-small:hover,
+#time-footer-center #bar-footer-center:hover #bar-footer-center-small{
     border-color: greenyellow;
 }
 
@@ -403,6 +404,24 @@ footer{
     font-size: 25px;
 }
 
+.ball-bar{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
+    position: absolute;
+    bottom:-8px;
+    right:0;
+}
+
+#time-footer-center #bar-footer-center-small:hover .ball-bar,
+#time-footer-center #bar-footer-center:hover .ball-bar,
+#footer-dx #bar-footer-dx-small:hover .ball-bar,
+#footer-dx #bar-footer-dx:hover .ball-bar{
+    display: inline-block;
+}
+
 /* parte destra */
 #footer-dx{
     width: 210px;
@@ -413,14 +432,14 @@ footer{
 #footer-dx #bar-footer-dx-small{
     display: inline-block;
     border-radius: 2px;
-    width: 15px;
+    width: 25px;
     border-bottom: 5px solid white;
     position: absolute;
     bottom:-4px;
     left: 0;
 }
 
-#footer-dx #barr-footer-dx{
+#footer-dx #bar-footer-dx{
     display: inline-block;
     border-radius: 2px;
     width: 80px;
@@ -429,7 +448,8 @@ footer{
     position: relative;
 }
 
-#footer-dx #bar-footer-dx-small:hover{
+#footer-dx #bar-footer-dx-small:hover,
+#footer-dx #bar-footer-dx:hover #bar-footer-dx-small{
     border-color: greenyellow;
 }
 
@@ -453,7 +473,7 @@ footer i:hover{
         margin-left: 10px;
     }
    
-    #time-footer-center #barr-footer-center{
+    #time-footer-center #bar-footer-center{
         width: 200px;
     }
 
@@ -467,7 +487,7 @@ footer i:hover{
 
 }
 @media screen and (max-width:700px){
-    #time-footer-center #barr-footer-center{
+    #time-footer-center #bar-footer-center{
         width: 100px;
     }
 
@@ -493,7 +513,7 @@ footer i:hover{
         height:20px
     }
 
-    #time-footer-center #barr-footer-center{
+    #time-footer-center #bar-footer-center{
         width: 40px;
     }
 
@@ -508,7 +528,7 @@ footer i:hover{
         width: 5px;
     }
     
-    #footer-dx #barr-footer-dx{
+    #footer-dx #bar-footer-dx{
         margin-right: 5px;
         width: 40px;
     }
