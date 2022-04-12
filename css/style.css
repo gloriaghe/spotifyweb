@@ -64,6 +64,10 @@ aside{
     justify-content: space-between;
 }
 
+#logo a img:last-child{
+    display: none;
+}
+
 .flex{
     display: flex;
    align-items: center;
@@ -313,16 +317,17 @@ footer{
 #footer-dx{
     width: 210px;
 }
-
-#footer-dx #bar-music{
+#footer-dx div{
+    display: inline-block;
+}
+#footer-dx div #bar-music{
     display: inline-block;
     border-radius: 2px;
     width: 15px;
     border-bottom: 3px solid white;
-    margin-left: 20px;
 }
 
-#footer-dx span:last-child{
+#footer-dx div span:last-child{
     display: inline-block;
     border-radius: 2px;
     width: 80px;
@@ -381,7 +386,66 @@ footer{
         height:20px
     }
 
+    #footer-dx {
+        width: 120px;
+      }
+
+    #footer-dx #bar-music{
+        width: 5px;
+    }
+    
+    #footer-dx div span:last-child{
+        margin-right: 5px;
+        width: 40px;
+       
+    }
 }
+
+@media screen and (max-width:460px){
+    aside{
+        width: 60px;
+    }
+
+    #section-playlist{
+        width: calc(100vw - 60px);
+    }
+
+    #logo a img:first-child{
+    display: none;
+    }
+
+    #logo a img:last-child{
+        display: inline-block;
+        width: 25px;
+    }
+
+    aside nav span,
+    #playlist-navsx, 
+    #account span,
+    #account strong{
+    display: none;
+    }
+
+    #account a:first-child{
+        margin-bottom: 20px;
+        width: 25px;
+    }
+
+    #footer-dx{
+        width: 50px;
+    }
+
+    #footer-dx div{
+        display: none;
+    }
+    #footer-sx {
+        width: 100px;
+    }
+    #footer-sx i{
+        display: none;
+    }
+}
+
 @media screen and (max-height:630px){
     #scroll-bar-lateral{
         height: 25vh;
