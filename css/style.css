@@ -48,6 +48,10 @@ ul li{
     font-size: 10px;
 }
 
+#top-bar > strong:hover{
+    font-size: 13px;
+}
+
 /* barra laterale comandi */
 #internal-section{
     display: flex;
@@ -170,6 +174,13 @@ margin-right: 10px;
     margin-right: 10px;
 }
 
+aside nav span:hover,
+#plus:hover,
+#creates-playlist:hover,
+#scroll-bar-lateral div a:hover,
+.hoverwhite:hover{
+    color: white;
+}
 
 /* pagina interna con playlist e brani */
 #section-playlist{
@@ -183,6 +194,10 @@ margin-right: 10px;
     margin-top: 100px;
     text-align: center;
     font-weight: bolder;
+}
+
+#menu-playlist a:hover{
+    color: white;
 }
 
 #menu-playlist a{
@@ -268,6 +283,20 @@ footer{
     padding-left: 20px;
 }
 
+#brano-underlined{
+    display: block;
+}
+
+#brano-underlined:hover{
+    text-decoration: underline;
+}
+#footer-sx i{
+    color: #a3a3a3;
+}
+#footer-sx i:hover{
+    color: white;
+}
+
 /* parte centrale */
 #nav-footer{
     width: 30%;
@@ -298,20 +327,24 @@ footer{
 }
 
 
-#time-footer-center span:last-child{
+#time-footer-center #barr-footer-center{
     display: inline-block;
-    width: 250px;
+    width: 350px;
     border-bottom: #a3a3a3 3px solid;
-    margin-right: 20px;
+    margin: 0 10px;
     border-radius: 2px;
+    position: relative;
 }
 
-#time-footer-center span:first-child{
+#time-footer-center #bar-footer-center-small{
     width: 100px;
-    border-bottom: 3px solid white;
-    margin-left: 20px;
+    border-bottom: 5px solid white;
     border-radius: 2px;
+    position: absolute;
+    bottom:-4px;
+    left: 0;
 }
+
 
 /* parte destra */
 #footer-dx{
@@ -320,26 +353,32 @@ footer{
 #footer-dx div{
     display: inline-block;
 }
-#footer-dx div #bar-music{
+#footer-dx #bar-footer-dx-small{
     display: inline-block;
     border-radius: 2px;
     width: 15px;
-    border-bottom: 3px solid white;
+    border-bottom: 5px solid white;
+    position: absolute;
+    bottom:-4px;
+    left: 0;
 }
 
-#footer-dx div span:last-child{
+#footer-dx #barr-footer-dx{
     display: inline-block;
     border-radius: 2px;
     width: 80px;
     border-bottom: #a3a3a3 3px solid;
     margin-right: 20px;
+    position: relative;
 }
 
 
 #footer-dx i{
     margin: 0 10px;
 }
-
+footer i:hover{
+    cursor: pointer;
+}
 @media screen and (max-width:900px){
     /* pagina interna con playlist e brani */
     .img-square img{
@@ -352,12 +391,12 @@ footer{
         margin-left: 10px;
     }
    
-    #time-footer-center span:last-child{
-        width: 83px;
+    #time-footer-center #barr-footer-center{
+        width: 200px;
     }
 
-    #time-footer-center span:first-child{
-        width: 34px;
+    #time-footer-center #bar-footer-center-small{
+        width: 60px;
     }  
 
     #nav-central-buttons{
@@ -365,7 +404,15 @@ footer{
 
 
 }
+@media screen and (max-width:700px){
+    #time-footer-center #barr-footer-center{
+        width: 100px;
+    }
 
+    #time-footer-center #bar-footer-center-small{
+        width: 30px;
+    }  
+}
 
 @media screen and (max-width:570px){
     /* pagina interna con playlist e brani */
@@ -386,18 +433,24 @@ footer{
         height:20px
     }
 
+    #time-footer-center #barr-footer-center{
+        width: 40px;
+    }
+
+    #time-footer-center #bar-footer-center-small{
+        width: 14px;
+    }  
     #footer-dx {
         width: 120px;
       }
 
-    #footer-dx #bar-music{
+    #footer-dx #bar-footer-dx-small{
         width: 5px;
     }
     
-    #footer-dx div span:last-child{
+    #footer-dx #barr-footer-dx{
         margin-right: 5px;
         width: 40px;
-       
     }
 }
 
@@ -410,19 +463,18 @@ footer{
         width: calc(100vw - 60px);
     }
 
-    #logo a img:first-child{
-    display: none;
-    }
-
     #logo a img:last-child{
         display: inline-block;
         width: 25px;
     }
 
+    #logo a img:first-child,
     aside nav span,
     #playlist-navsx, 
     #account span,
-    #account strong{
+    #account strong,
+    #footer-dx div,
+    #footer-sx i{
     display: none;
     }
 
@@ -435,15 +487,10 @@ footer{
         width: 50px;
     }
 
-    #footer-dx div{
-        display: none;
-    }
     #footer-sx {
         width: 100px;
     }
-    #footer-sx i{
-        display: none;
-    }
+
 }
 
 @media screen and (max-height:630px){
