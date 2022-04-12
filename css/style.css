@@ -430,9 +430,9 @@ footer{
 
 /* parte destra */
 #footer-dx{
-    width: 210px;
+    width: 25%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
 }
 #footer-dx div{
     display: inline-block;
@@ -543,12 +543,12 @@ footer i:hover{
       }
 
     #footer-dx #bar-footer-dx-small{
-        width: 5px;
+        width: 15px;
     }
     
     #footer-dx #bar-footer-dx{
         margin-right: 5px;
-        width: 40px;
+        width: 100px;
     }
 }
 
@@ -584,18 +584,19 @@ footer i:hover{
     }
 
     #nav-footer{
-        width: 40%;
+        width: 35%;
     }
     #footer-dx{
-        width: 30%;
+        width: 35%;
     }
 
     #footer-sx {
         width: 30%;
     }
-    #nav-central-buttons{
+    #nav-central-buttons i{
         font-size: 16px;
-        margin left: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
