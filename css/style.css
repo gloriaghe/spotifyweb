@@ -228,7 +228,7 @@ h3{
     margin: 15px 0;
 }
 
-.img-flex span{
+.img-recently-played span{
     color: #a3a3a3;
 }
 
@@ -237,7 +237,7 @@ h3{
     object-fit: cover;
 }
 
-.img-flex{
+.img-recently-played{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -249,20 +249,20 @@ h3{
     margin-right: 10px;
 }
 
-#img-flex-artistipopolari img{
+#img-artistipopolari img{
     border-radius: 50%;
 }
 
-#img-flex-johnDoe, 
-#img-flex-artistipopolari{
+#img-johnDoe, 
+#img-artistipopolari{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     text-align: center;
 }
 
-#img-flex-johnDoe > div, 
-#img-flex-artistipopolari > div{
+#img-johnDoe > div, 
+#img-artistipopolari > div{
 margin-right: 10px;
 margin-top: 20px;
 }
