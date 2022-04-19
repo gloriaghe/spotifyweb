@@ -601,11 +601,32 @@ footer i:hover{
 
 @media screen and (max-width: 560px){
     aside{
-        width: 60px;
+        width: 50px;
+    }
+
+    #logo{
+        margin-left: 13px;
+    }
+
+    aside div nav{
+        margin-left: 13px;
+    }
+
+    #account {
+        margin-left: 13px;
+    }
+
+    #account a:first-child {
+        width: 30px;
+        margin-left: 5px;
+      }
+
+    #bar-active{
+        display: none;
     }
 
     #section-playlist{
-        width: calc(100vw - 60px);
+        width: calc(100vw - 50px);
     }
 
     .container-playlist{
