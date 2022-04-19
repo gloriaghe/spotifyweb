@@ -506,6 +506,13 @@ footer i:hover{
     #footer-dx .fa-list{
         margin-left: 100px;
     }
+    
+}
+@media screen and (max-width: 1370px){
+    .img-recently-played{
+        height: 300px;
+        overflow-x: scroll;
+    }
 }
 
 @media screen and (max-width: 900px){
