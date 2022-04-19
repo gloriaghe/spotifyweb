@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style-libreria.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Libreria Spotify</title>
+</head>
+<body>
+    <main>
+        <!-- barra superiore in trasparenza -->
+        <section id="top-bar" class="container">
+            <strong>
+                EFFETTUA L'UPGRADE
+            </strong>
+        </section>
+
+        <section id="internal-section">
+            <!-- barra laterale comandi -->
+            <aside>
+                <div>
+                    <section id="logo">
+                        <a href="#">
+                            <img src="../img/logo.svg" alt="Logo">
+                            <img src="../img/logo-small.svg" alt="Logo small">
+                        </a>
+                    </section>
+
+                    <nav>
+                        <ul>
+                            <li>
+                                <a class="flex" href="#">
+                                <img class="img-aside" src="../img/home.svg" alt="Home">
+                                <span >Home</span>
+                            </a>
+                        </li>
+                            <li>
+                                <a class="flex" href="#">
+                                <img class="img-aside"  src="../img/search.svg" alt="cerca">
+                                <span>Cerca</span>
+ 
+                            </a>
+                        </li>
+                            <li>
+                                <a class="here-aside flex" href="#">
+                                    <img class="img-aside" src="../img/libreria.svg" alt="libreria">
+                                     <span>La tua libreria</span>
+                                     <span id="bar-active"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <section id="playlist-navsx">
+                        <strong>PLAYLIST</strong>
+                        
+                            <div><a class="flex" href="#">
+                                <span id="plus">+</span> 
+                                <span id="creates-playlist">Crea Playlist</span> 
+                            </a></div>
+                            <div id="scroll-bar-lateral">
+                                <div><a href="#">Nome Playlist</a></div>
+                                <div><a href="#">Nome Playlist</a></div>
+                                <div><a href="#">Nome Playlist</a></div>
+                                <div><a href="#">Nome Playlist</a></div>
+                                <div><a href="#">Nome Playlist</a></div>
+                                <div><a href="#">Nome Playlist</a></div>
+                                <div><a href="#">Nome Playlist</a></div>
+                            </div>
+                            
+                    </section>
+                </div>
+               
+                <section id="account">
+                    <a class="flex" href="#">
+                        <img id="img-download" src="../img/download.svg" alt="">
+                         <span class="hoverwhite">Installa App</span></a><br>
+                    <span></span>
+                    <a class="flex" href="#">
+                        <img id="img-profile" src="../img/profile.svg" alt="">
+                        <strong>John Doe</strong></a>
+                </section>
+
+            </aside>
+
+            <!-- pagina interna con playlist e brani -->
+
+            <section id="section-playlist">
+                
+            </section>
+
+            
+        
+        </section>
+        
+            
+    </main>
+    
+
+    <!-- footer con barre scorrimento brano in ascolto -->
+    <footer>
+        <section id="footer-sx">
+            <img src="../img/sinister.jpeg" alt="">
+            <div>
+                <strong>Sinister</strong>
+                <a href="#" id="brano-underlined">Brano Nome</a>
+            </div>
+            <div id="icon-footer-sx">
+                <a href="#"><i class="far fa-heart"></i></a>
+                <a href="#"><i class="far fa-folder"></i></a>
+            </div>
+        
+        </section>
+
+        <nav id="nav-footer">
+            <div id="nav-central-buttons">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle"></i>
+                <i class="fas fa-step-backward inverted-icon"></i>
+                <i class="fas fa-redo"></i>
+            </div>
+
+            <div id="time-footer-center">
+                0:25
+                <span id="bar-footer-center"><span id="bar-footer-center-small"><span class="ball-bar"></span></span></span> 
+                
+                4:35
+            </div>
+        </nav>
+
+        <section id="footer-dx">
+            <i class="fas fa-list"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+            <span id="bar-footer-dx"><span id="bar-footer-dx-small"><span class="ball-bar"></span></span></span>
+            
+        </section>
+
+    </footer>
+</body>
+</html>

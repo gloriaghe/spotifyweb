@@ -191,7 +191,7 @@ aside nav span:hover,
     left: -20px;
 }
 
-nav ul li:first-child{
+.here-aside{
     position: relative;
 }
 /* pagina interna con playlist e brani */
@@ -295,7 +295,7 @@ margin-top: 20px;
     display: inline;
 }
 
-#menu-playlist a:first-child{
+.here-menu-playlist{
     position: relative;
 }
 
@@ -617,7 +617,8 @@ footer i:hover{
     }
 
     #account a:first-child {
-        width: 30px;
+        width: 304
+        px;
         margin-left: 5px;
       }
 
