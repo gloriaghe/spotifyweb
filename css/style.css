@@ -295,8 +295,17 @@ margin-top: 20px;
     display: inline;
 }
 
+#menu-playlist a:first-child{
+    position: relative;
+}
+
 #bar-green-active{
     border-bottom: 2px solid greenyellow;
+    width: 30px;
+    display: inline-block;
+    position: absolute;
+    bottom: -3px;
+    left: 40px;
 }
 
 /* footer */
