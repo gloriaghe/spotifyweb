@@ -1,0 +1,65 @@
+/* pagina interna con libreria */
+
+#section-library{
+    height: calc(100vh - 90px);
+    width: calc(100vw - 200px);
+    background-color: #141922;
+    overflow: scroll;
+}
+#section-library h2{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+#section-library-flex{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 1% 1%;
+}
+
+#liked-songs{
+    width: 425px ;
+    height: 270px;
+    background-color: #623eef;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+#liked-songs div{
+    margin: 10px 20px;
+    line-height: 25px;
+}
+
+#liked-songs h1{
+    margin: 10px 20px;
+    font-size: 2em;
+}
+
+#liked-songs > span{
+    margin: 10px 20px;
+    font-size: 1em;
+}
+
+.container-playlist{
+    width: 200px;
+}
+
+#liked-songs > .play-playlist{
+    display: none;
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#liked-songs:hover .play-playlist{
+    display: inline;
+}
+
+#liked-songs:hover{
+    background-color: #8369ec;
+}
