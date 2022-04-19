@@ -488,13 +488,13 @@ footer i:hover{
 
 @media screen and (max-width: 900px){
     /* pagina interna con playlist e brani */
-    /* .container-playlist{
-        width: 140px;
-    } */
+    .container-playlist{
+        width: 150px;
+    }
 
     /* footer */
     #footer-sx{
-        width: 160px;
+        width: 180px;
         margin-left: 10px;
     }
    
@@ -507,11 +507,16 @@ footer i:hover{
     }  
 
     #nav-central-buttons{
-        width: 130px;
+        width: 150px;
 
 
 }
 @media screen and (max-width: 700px){
+
+    #menu-playlist{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
     #time-footer-center #bar-footer-center{
         width: 100px;
     }
@@ -530,6 +535,22 @@ footer i:hover{
         flex-direction: column ;
         justify-content: space-between;
     }
+
+    #nav-central-buttons {
+        width: 180px;
+    }
+
+    #nav-central-buttons {
+        font-size: 15px;
+    }
+
+    #footer-dx i {
+        font-size: 14px;
+    }
+
+    #footer-dx{
+        width: 33%;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -540,11 +561,12 @@ footer i:hover{
         margin-left: 5px;
     }
     #footer-sx img{
-        margin-right: 5px;
+        margin-right: 10px;
+        height:25px
     }
 
-    #footer-sx img{
-        height:20px
+    #footer-sx #icon-footer-sx {
+    margin-left: 16px;
     }
 
     #time-footer-center #bar-footer-center{
@@ -608,10 +630,6 @@ footer i:hover{
 
     #footer-sx {
         width: 20%;
-    }
-
-    #footer-sx #icon-footer-sx {
-        margin-left: 10px;
     }
 
     #nav-central-buttons i{
