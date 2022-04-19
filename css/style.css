@@ -346,6 +346,10 @@ footer{
     color: white;
 }
 
+#icon-footer-sx a .fa-heart{
+    margin-right: 20px;
+}
+
 /* parte centrale */
 #nav-footer{
     width: 30%;
@@ -470,7 +474,17 @@ footer i:hover{
     cursor: pointer;
 }
 
-@media screen and (max-width:900px){
+@media screen and (min-width: 1300px){
+    #footer-dx #bar-footer-dx{
+        width: 190px
+    }
+
+    #footer-dx #bar-footer-dx-small{
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 900px){
     /* pagina interna con playlist e brani */
     .container-playlist{
         width: 140px;
@@ -495,7 +509,7 @@ footer i:hover{
 
 
 }
-@media screen and (max-width:700px){
+@media screen and (max-width: 700px){
     #time-footer-center #bar-footer-center{
         width: 100px;
     }
@@ -516,7 +530,7 @@ footer i:hover{
     }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width: 600px){
    
     /* footer */
     #footer-sx{
@@ -552,7 +566,7 @@ footer i:hover{
     }
 }
 
-@media screen and (max-width:560px){
+@media screen and (max-width: 560px){
     aside{
         width: 60px;
     }
@@ -600,15 +614,16 @@ footer i:hover{
     }
 }
 
-@media screen and (max-width:410px){
+@media screen and (max-width: 410px){
 
     .container-playlist{
         width: 120px;
     }
 }
 
-@media screen and (max-height:600px) {
+@media screen and (max-height: 600px) {
     #scroll-bar-lateral {
         display: none;
     }
 }
+
