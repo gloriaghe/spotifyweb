@@ -45,6 +45,7 @@
 
 .container-playlist{
     width: 200px;
+    height: 270px;
 }
 
 #liked-songs > .play-playlist{
@@ -62,4 +63,40 @@
 
 #liked-songs:hover{
     background-color: #8369ec;
+}
+
+@media screen and (max-width: 615px){
+    .container-playlist{
+        width: 130px;
+        height: 250px;
+    }
+
+    #section-library-flex{
+        justify-content: space-around;
+        margin-left: 1% 1%;
+    }
+
+}
+@media screen and (max-width: 560px){
+
+    #section-library{
+        width: calc(100vw - 50px);
+    }
+}
+
+@media screen and (max-width: 330px){
+    #liked-songs{
+        width: 90%;
+        height: 120px;
+    }
+    #liked-songs div {
+        display: none;
+    }
+    .container-playlist{
+        width: 180px;
+        height: 250px;
+    }
+    .img-squares {
+        width: 80%;
+    }
 }
