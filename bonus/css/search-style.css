@@ -23,9 +23,11 @@
 
 #genres div{
 width: 23%;
-height: 180px;
+height: 200px;
 border-radius: 20px;
 margin: 10px 10px;
+padding-top: 20px;
+overflow: hidden;
 }
 
 #genres-pop{
@@ -46,10 +48,10 @@ margin: 10px 10px;
 }
 #genres img{
     position: absolute;
-    bottom: 12px;
-    right: 12px;
+    bottom: 2px;
+    right: -18px;
     object-fit: cover;
-    transform: rotate(20deg);
+    transform: rotate(25deg);
 }
 
 /* Browse all */
@@ -73,6 +75,9 @@ margin: 10px 10px;
     height: 180px;
     border-radius: 20px;
     margin: 20px;
+    padding-top: 20px;
+    overflow: hidden;
+
  }
 
 #podcasts{
@@ -92,10 +97,9 @@ margin: 10px 10px;
 }
 #browse img{
     position: absolute;
-    bottom: 12px;
-    right: 12px;
-    object-fit: cover;
-    transform: rotate(20deg);
+    bottom: -2px;
+    right: -11px;
+    transform: rotate(25deg);
 }
 @media screen and (max-width: 900px){
     #genres div{
